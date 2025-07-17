@@ -2,8 +2,6 @@
 
 Services for ingesting, parsing, and storing AWIPS products to the MDS.
 
----
-
 ## Background
 
 The National Weather Service has long been using AWIPS to produce and disseminate data between offices, emergency management, and the public. AWIPS products are sent as text data across several transmission methods.
@@ -20,8 +18,6 @@ The main reason this repo uses the name AWIPS, instead of something like NWSText
 
 AWIPS was also preceeded by AFOS, another system for producing and disseminating products. However, the IEM seems to have nailed archiving this so we will leave the glory to them. The focus for us can stay on AWIPS.
 
----
-
 ## Design
 
 The design of this module or package or system (whatever you want to call it) is still up for debate. Sitting in a room by yourself contemplating the design of such a large system leaves a lot of the burden of problem
@@ -29,8 +25,6 @@ solving to a single very inexperienced developer.
 
 The current thinking is that this is a module of the MDS, since the MDS database is a completely separate repository. However, some thought has gone into whether a separate database system should be spooled up entirely
 for the purposes of archiving this data while allowing other services to access this data through APIs. The latter might honestly be the way to go but we will have to see.
-
----
 
 ## Acknowledgements
 
